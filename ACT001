@@ -53,7 +53,7 @@ CREATE TABLE appointments(
     doctors_id int(10),
     date_of_appointment DATE,
     visiting_reason TEXT,
-    status VARCHAR(10) 
+    status_of_appointment ENUM('Scheduled', 'Completed', 'Canceled', 'No-Show')
 
 );
 
